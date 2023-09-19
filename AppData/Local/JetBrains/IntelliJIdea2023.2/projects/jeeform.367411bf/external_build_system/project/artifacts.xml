@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" __external-system-id="Maven" name="Exercice01:war exploded">
+    <output-path>$PROJECT_DIR$/target/Exercice01-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Exercice01</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Exercice01" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/Exercice01-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Exercice01/web/Web" />
+    </root>
+  </artifact>
+  <artifact type="war" __external-system-id="Maven" name="Exercice01:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Exercice01</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Exercice01-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Exercice01:war exploded" />
+    </root>
+  </artifact>
+</component>
